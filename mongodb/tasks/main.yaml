@@ -1,0 +1,28 @@
+- name: copy roboshop configuration
+  ansible.builtin.copy:
+      src:  mongodb.repo
+      dest: /etc/yum.repos.d/mongo.repo
+  
+- name: install mongodb 
+  ansible.builtin.package:
+      name: mongodb-org
+      state: present
+  
+- name: Enable service mongodb
+  ansible.builtin.service:
+        name: mongod
+        state: started
+        enabled: yes
+
+- name: allow remote conncections
+  ansible.builtin.replace:
+       path: /etc/mongod.conf
+       regexp: '127.0.0.1'
+       replace: '0.0.0.0'
+ 
+
+- name: Enable service nginx
+  ansible.builtin.service:
+        name: mongod
+        state: restarted
+     
