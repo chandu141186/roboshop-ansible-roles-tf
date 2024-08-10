@@ -1,0 +1,11 @@
+
+MONGODB_HOST: mongodb.chandulearn.online # submit your host
+REDIS_HOST: redis.chandulearn.online
+MYSQL_HOST: mysql.chandulearn.online
+RABBITMQ_HOST: rabbitmq.chandulearn.online
+CATALOGUE_HOST: catalogue.chandulearn.online
+USER_HOST: user.chandulearn.online
+CART_HOST: cart.chandulearn.online
+SHIPPING_HOST: shipping.chandulearn.online
+PAYMENT_HOST: payment.chandulearn.online
+DISPATCH_HOST: dispatch.chandulearn.online

@@ -1,0 +1,13 @@
+
+MONGODB_HOST: mongodb-prod.chandulearn.online  # submit your host
+REDIS_HOST: redis-prod.chandulearn.online 
+MYSQL_HOST: mysql-prod.chandulearn.online 
+RABBITMQ_HOST: rabbitmq-prod.chandulearn.online 
+CATALOGUE_HOST: catalogue-prod.chandulearn.online 
+USER_HOST: user-prod.chandulearn.online 
+CART_HOST: cart-prod.chandulearn.online 
+SHIPPING_HOST: shipping-prod.chandulearn.online 
+PAYMENT_HOST: payment-prod.chandulearn.online 
+DISPATCH_HOST: dispatch-prod.chandulearn.online
+# NEXUS_URL: http://172.31.5.95:8081/repository
+# group_id: "com/roboshop"
