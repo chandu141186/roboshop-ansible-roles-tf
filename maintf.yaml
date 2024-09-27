@@ -1,22 +1,15 @@
-#- name: "Install {{component}}"
- # hosts: localhost
- # connection: local
-  #vars_files:
-  #vars_files:- "variables-{{env}}.yaml"
-  #become: yes
- # roles: 
- # - "{{component}}"
-
-
-  
-- name: Install {{ component }}
+- name: "Install {{component}}"
   hosts: localhost
   connection: local
   vars_files:
-   - variables-{{ env }}.yaml
+    - "variables-{{env}}.yaml"
   become: yes
   roles: 
-   - {{ component }}
+    - "{{component}}"
+
+
+  
+
    
 
  
