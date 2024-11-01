@@ -5,7 +5,7 @@
     - "variables-{{ env }}.yaml"
   become: yes
   roles: 
-    - "{{ component }}"
+    - " {{ component }} "
 
 
   
